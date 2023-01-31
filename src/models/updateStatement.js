@@ -10,7 +10,7 @@ export async function updateStatement(stat, id, res) {
                 },
             }
         );
-        res.sendStatus(201);
+        res.sendStatus(200);
     } catch (error) {
         console.error(error);
         res.status(500).send(error);

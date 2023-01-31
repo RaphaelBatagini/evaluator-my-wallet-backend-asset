@@ -18,7 +18,7 @@ export async function postAccounts(req, res) {
             type: "debits",
             value: value,
             description: description,
-            date: now.format("DD/MM"),
+            date: now.format("DD/MM/YYYY HH:mm:ss"),
             id: statement.length,
         });
     else
@@ -26,7 +26,7 @@ export async function postAccounts(req, res) {
             type: "credits",
             value: value,
             description: description,
-            date: now.format("DD/MM"),
+            date: now.format("DD/MM/YYYY HH:mm:ss"),
             id: statement.length,
         });
 
